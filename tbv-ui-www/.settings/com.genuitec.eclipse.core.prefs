@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/resources/log4j2_production.xml,build,src/main/resources/log4j2_staging.xml,src/main/webapp/WEB-INF,src/main/resources/log4j2.xml,src/main/resources/log4j2_test.xml,src/main/resources/log4j2_development.xml
+validator.Unchecked=

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="17px" viewBox="0 0 20 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>pt-icon-redo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="rental-plan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rental-landing-page" transform="translate(-854.000000, -1180.000000)" fill-rule="nonzero" fill="#F76056">
+            <g id="pt-icon-redo" transform="translate(854.000000, 1180.000000)">
+                <path d="M19.71,4.29 L15.71,0.29 C15.53,0.11 15.28,0 15,0 C14.45,0 14,0.45 14,1 C14,1.28 14.11,1.53 14.29,1.71 L16.59,4 L6,4 C2.69,4 0,6.69 0,10 C0,13.31 2.69,16 6,16 L11,16 L11,14 L6,14 C3.79,14 2,12.21 2,10 C2,7.79 3.79,6 6,6 L16.59,6 L14.3,8.29 C14.11,8.47 14,8.72 14,9 C14,9.55 14.45,10 15,10 C15.28,10 15.53,9.89 15.71,9.71 L19.71,5.71 C19.89,5.53 20,5.28 20,5 C20,4.72 19.89,4.47 19.71,4.29 Z M15,13 C13.9,13 13,13.9 13,15 C13,16.1 13.9,17 15,17 C16.1,17 17,16.1 17,15 C17,13.9 16.1,13 15,13 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

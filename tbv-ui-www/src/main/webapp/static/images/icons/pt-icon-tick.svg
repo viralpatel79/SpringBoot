@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="14px" viewBox="0 0 19 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>pt-icon-tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="rental-plan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rental-landing-page" transform="translate(-463.000000, -894.000000)" fill-rule="nonzero" fill="#F76056">
+            <g id="pt-icon-tick" transform="translate(463.000000, 894.000000)">
+                <path d="M17.5,0 C17.1733333,0 16.8816667,0.128333333 16.6716667,0.338333333 L5.83333333,11.1883333 L1.995,7.35 C1.785,7.12833333 1.49333333,7 1.16666667,7 C0.525,7 0,7.525 0,8.16666667 C0,8.49333333 0.128333333,8.785 0.338333333,8.995 L5.005,13.6616667 C5.215,13.8716667 5.50666667,14 5.83333333,14 C6.16,14 6.45166667,13.8716667 6.66166667,13.6616667 L18.3283333,1.995 C18.5383333,1.785 18.6666667,1.49333333 18.6666667,1.16666667 C18.6666667,0.525 18.1416667,0 17.5,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

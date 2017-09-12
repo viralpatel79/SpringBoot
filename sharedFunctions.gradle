@@ -1,0 +1,27 @@
+def getVersionBuildNumber() {
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'log', '-1', '--date=iso', '--pretty=format:"%ad"', '--', './'
+        standardOutput = stdout
+    }
+    logger.info('Latest Log = ' + stdout.toString())
+    def commitDate = stdout.toString().split(' ')
+    //2017-08-31 21:18:41 -0500
+    def ymd = commitDate[0].split('-')
+    def hms = commitDate[1].split(':')
+    return ymd[0].substring(1) + ymd[1] + ymd[2] + hms[0] + hms[1] + hms[2]
+}
+
+def getGitLogCommitHash() {
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'rev-list', '-1', 'HEAD', './'
+        standardOutput = stdout
+    }
+    return stdout.toString()
+}
+
+ext {
+    getGitLogDateAsVersionNumber = this.&getVersionBuildNumber
+    getGitLogCommitHash = this.&getGitLogCommitHash
+}

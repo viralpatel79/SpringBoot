@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>pt-icon-home</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="rental-plan" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rental-landing-page" transform="translate(-465.000000, -1180.000000)" fill-rule="nonzero" fill="#F76056">
+            <g id="pt-icon-home" transform="translate(465.000000, 1180.000000)">
+                <path d="M2,12 L2,19 C2,19.55 2.45,20 3,20 L8,20 L8,13 L12,13 L12,20 L17,20 C17.55,20 18,19.55 18,19 L18,12 L10,4 L2,12 Z M19.71,9.29 L17,6.59 L17,3 C17,2.45 16.55,2 16,2 C15.45,2 15,2.45 15,3 L15,4.59 L10.71,0.3 C10.53,0.11 10.28,0 10,0 C9.72,0 9.47,0.11 9.29,0.29 L0.29,9.29 C0.11,9.47 0,9.72 0,10 C0,10.55 0.45,11 1,11 C1.28,11 1.53,10.89 1.71,10.71 L10,2.41 L18.29,10.7 C18.47,10.89 18.72,11 19,11 C19.55,11 20,10.55 20,10 C20,9.72 19.89,9.47 19.71,9.29 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

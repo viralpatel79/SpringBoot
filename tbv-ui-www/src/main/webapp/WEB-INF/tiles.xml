@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Default Layout Definition -->
+   <definition name="default-layout" template="/WEB-INF/views/layouts/defaultLayout.jsp">  
+       <put-attribute name="header" value="/WEB-INF/views/layouts/header.jsp" />  
+       <put-attribute name="footer" value="/WEB-INF/views/layouts/footer.jsp" />  
+   </definition>  
+  
+  <definition name="globalError" extends="default-layout">  
+       <put-attribute name="title" value="Error Occured" />  
+       <put-attribute name="body" value="/WEB-INF/views/globalError.jsp" />  
+   </definition> 
+    
+   <definition name="home" extends="default-layout">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition> 
+   
+   <definition name="login" extends="default-layout">  
+       <put-attribute name="title" value="Textbook Valet Login Page" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/login.jsp" />  
+   </definition> 
+   
+   <definition name="rentalProblem" extends="default-layout">  
+       <put-attribute name="title" value="Textbook Valet Rental" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/rentalProblems.jsp" />  
+   </definition> 
+   
+   <definition name="rentalLanding" extends="default-layout">  
+       <put-attribute name="title" value="Textbook Valet Rental" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/rentalLanding.jsp" />  
+   </definition>
+   
+  
+</tiles-definitions>

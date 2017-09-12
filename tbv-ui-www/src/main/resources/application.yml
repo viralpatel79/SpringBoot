@@ -1,0 +1,45 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  social:
+    facebook:
+      app-id: 946265268822887
+      app-secret: a4736c240f507597754f269b7dd152f9
+  datasource: 
+    initialize: false
+    url: jdbc:mysql://localhost:3306/tbv_rails?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 
+    type: com.zaxxer.hikari.HikariDataSource     
+    hikari:
+      idle-timeout: 10000
+      connection-timeout: 60000
+      connection-test-query: SELECT 1
+      #minimum-idle: 3
+      maximum-pool-size: 10
+      pool-name: tbv-ui-datasource
+      
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+          implicit-strategy: com.textbookvalet.ui.www.hibernate.ImplicitNamingStrategyComponentPathImpl
+          physical-strategy: com.textbookvalet.ui.www.hibernate.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate.format_sql: true 
+ 
+flyway:
+  enabled: false
+ 
+token:
+  secret: FIRE-left-POLAND-himself
+  
+uploadsPath: 'C:\\tbv'
+
+railsAPI: 
+  baseURL: 'http://dev.textbookvalet.com/api/v1/'

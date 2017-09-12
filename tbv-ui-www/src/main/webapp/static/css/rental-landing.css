@@ -1,0 +1,70 @@
+body {
+  background: #fff;
+  padding-top: 50px; }
+
+p {
+  line-height: 1.4; }
+
+.rental-landing_navbar .bg-faded {
+  background-color: #fff; }
+
+.rental-landing_navbar .navbar {
+  border-bottom: 1px solid #CCC; }
+
+.rental-landing_navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.rental-landing_hero {
+  padding: 64px 0px;
+  color: #fff;
+  background-color: #F76056; }
+  @media screen and (min-width: 768px) {
+    .rental-landing_hero {
+      background-image: url("../../static/images/rental-landing-hero.png");
+      min-height: 500px;
+      background-position: center;
+      background-size: cover; } }
+  .rental-landing_hero h1 {
+    font-size: 2.4rem; }
+    @media screen and (min-width: 768px) {
+      .rental-landing_hero h1 {
+        font-size: 3rem; } }
+  .rental-landing_hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 24px 0px; }
+    @media screen and (min-width: 768px) {
+      .rental-landing_hero p {
+        font-size: 1.6rem; } }
+
+.rental-landing_message {
+  padding: 24px 0px 0px; }
+  @media screen and (min-width: 768px) {
+    .rental-landing_message {
+      padding: 48px 0px 24px; } }
+  .rental-landing_message .message-dollars {
+    font-size: 2.2rem;
+    margin: 16px 0px; }
+    @media screen and (min-width: 768px) {
+      .rental-landing_message .message-dollars {
+        font-size: 3rem; } }
+    .rental-landing_message .message-dollars del {
+      color: #F76056; }
+
+.rental-landing_features-section {
+  padding: 24px 0px; }
+  @media screen and (min-width: 768px) {
+    .rental-landing_features-section {
+      padding: 64px 0px; } }
+  .rental-landing_features-section .features-section_icon {
+    margin: 8px 0px;
+    height: 20px; }
+
+.rental-landing_cta {
+  padding: 24px 0px;
+  margin: 36px 0px 32px;
+  background: #F9F9F9;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px; }

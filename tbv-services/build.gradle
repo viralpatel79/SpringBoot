@@ -1,0 +1,75 @@
+buildscript {
+    repositories {
+    	mavenLocal()
+        mavenCentral()
+    } 
+    dependencies {
+		classpath("io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE")	
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+apply from: '../sharedFunctions.gradle'
+version = '0.1.' + getGitLogDateAsVersionNumber()
+group = 'com.textbookvalet.services'
+
+jar {
+    baseName = 'tbv-services'
+    //version =  '0.1.0'
+    group = group
+    manifest {
+        attributes 'Implementation-Title': 'TextbookValet Services' \
+            , 'Implementation-Version': version \
+            , 'Git-Revision': getGitLogCommitHash()
+    }
+}
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+} 
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+def springVersion = "4.3.10.RELEASE"   
+def junitVersion = "4.12" 
+def apacheCommonsLang = "3.6" 
+
+dependencies {     
+        compile(project(':tbv-commons'))
+      
+	compile("org.springframework:spring-core:${springVersion}")
+	compile("org.springframework:spring-web:${springVersion}")
+	compile("org.springframework:spring-webmvc:${springVersion}")
+	compile("org.springframework.data:spring-data-jpa:1.11.6.RELEASE")	
+	 
+	compile("org.apache.commons:commons-lang3:${apacheCommonsLang}")
+	
+	compile("com.github.ulisesbocchio:jasypt-spring-boot-starter:1.14") 
+	compile("org.mindrot:jbcrypt:0.4")	
+    
+    compile("javax.servlet:javax.servlet-api:3.1.0")
+    compile("javax.servlet.jsp:javax.servlet.jsp-api:2.3.1")
+    compile("javax.servlet:jstl:1.2")
+	compile("mysql:mysql-connector-java:6.0.6")
+	compile("com.zaxxer:HikariCP:2.6.3")
+    
+    compile("com.nextdoor.rollbar:rollbar-log4j:1.0.2")
+    
+     
+    testCompile("junit:junit:${junitVersion}") 
+}
+
+configurations.all {
+   exclude group: "ch.qos.logback", module: "logback-classic" 
+   exclude group: "ch.qos.logback", module:"logback-core"
+   exclude group: "org.springframework.boot", module:"spring-boot-starter-logging" 
+   exclude group: "org.apache.tomcat", module:"tomcat-jdbc"
+} 
+
+

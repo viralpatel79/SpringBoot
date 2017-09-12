@@ -1,0 +1,45 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    } 
+    dependencies {
+        classpath("io.spring.gradle:dependency-management-plugin:0.5.4.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+apply from: '../sharedFunctions.gradle'
+version = '0.1.' + getGitLogDateAsVersionNumber()
+group = 'com.textbookvalet.commons'
+
+jar {
+    baseName = 'tbv-commons'
+    //version =  '0.1.0'
+    group = group
+    manifest {
+        attributes 'Implementation-Title': 'TextbookValet Commons' \
+            , 'Implementation-Version': version \
+            , 'Git-Revision': getGitLogCommitHash()
+    }
+}
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8 
+
+dependencies {     
+     compile("org.hibernate:hibernate-core:5.2.10.Final")
+     compile("org.hibernate.validator:hibernate-validator:6.0.1.Final") 
+     compile ("org.projectlombok:lombok:1.16.8")
+     compile("com.google.code.gson:gson:2.8.1")
+}
+

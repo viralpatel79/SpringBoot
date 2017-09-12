@@ -1,0 +1,66 @@
+body {
+	font: 100% Rubik, sans-serif;
+	line-height: 1.3;
+	color: #333;
+	background-color: #F9F9F9;
+	padding-bottom: 100px;
+}
+
+button, input, optgroup, select, textarea {
+	font: 100% Rubik, sans-serif;
+}
+
+.form-control::placeholder {
+	color: #A4A4A4;
+	opacity: 1;
+}
+
+.form-control {
+	border-radius: 0.15rem;
+}
+
+.form-control:focus {
+	border-color: #f76056;
+}
+
+a {
+	color: #f76056;
+}
+
+a:hover {
+	color: #FF7268;
+}
+
+a:active {
+	color: #BF4B42;
+}
+
+a:focus {
+	color: #BF4B42;
+}
+
+.nav-pills .nav-link.active {
+	background-color: #f76056;
+}
+
+.btn {
+	text-transform: uppercase;
+	font-family: Rubik;
+	cursor: pointer;
+	border-radius: 0.15rem;
+}
+
+.btn-primary {
+	background: #f76056;
+	border: 1px solid #d8554b;
+}
+
+.btn-primary:hover {
+	background: #d8554b;
+	border: 1px solid #BF4B42;
+}
+
+.btn-primary:active {
+	background: #d8554b;
+	border: 1px solid #BF4B42;
+}
